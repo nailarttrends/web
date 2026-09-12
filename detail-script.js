@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         const newRelatedTitle = generateSeoTitle(relatedTerm);
                         
                         // MODIFIKASI: Menggunakan class redome-link dan menampilkan teks dari txt (display:none dihapus)
-                        const card = `<article class="content-card"><a href="javascript:void(0)" class="redome-link"><img src="${imageUrl}" alt="${newRelatedTitle}" loading="lazy"><div class="content-card-body"><h3>${capitalizeEachWord(relatedTerm)}</h3></div></a></article>`;
+                        const card = `<article class="content-card"><a href="javascript:void(0)" class="redome-link"><img src="${imageUrl}" alt="${newRelatedTitle}" loading="lazy"><div class="content-card-body">${capitalizeEachWord(relatedTerm)}</div></a></article>`;
                         
                         if(relatedPostsContainer) relatedPostsContainer.innerHTML += card;
                     });
